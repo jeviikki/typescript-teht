@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    "rootDir": "./task1/src",
     "outDir": "./build",
     "target": "ESNext",
     "module": "ESNext",
     "noImplicitAny": true,
     "strict": true
   },
-  "include": ["./**/*.ts"]
+  "include": ["./**/*"]
 }
