@@ -1,25 +1,50 @@
-export {}; // hack to ignore Book from task 3
+//export {}; // hack to ignore Book from task 3
 // TODO Define the 'ElectronicDevice' type (or interface)
-type ElectronicDevice = {}
+interface ElectronicDevice {
+    brand: string,
+    model: string,
+    type: string,
+}
 // Define the 'Book' type (or interface)
-type Book = {}
+interface Book {
+    title: string,
+    author: string,
+    type: string,
+}
 // Define the 'Product' type alias that can represent either 'ElectronicDevice' or 'Book'
-// osihgierdklgjgjoi
+type Product = {
+    type: string,
+    device: ElectronicDevice,
+    book: Book,
+}
 
 // Implement instances of the 'Product' type
 function createElectronicDevice(): ElectronicDevice {
-    // TODO: Prompt user for electronic device details (brand and model)
-    const brand = String(prompt("Enter device brand"));
-    const model = String(prompt("Enter device brand"));
-    return
-    // TODO: return object containing brand and model
+
+    const deviceBrand : string = String(prompt("Enter device brand"));
+    const deviceModel : string = String(prompt("Enter device model"));
+
+    const device: ElectronicDevice = {
+        brand: deviceBrand,
+        model: deviceModel,
+        type: "electronic",
+    }
+
+    return device
 }
 
 function createBook(): Book {
-    // TODO: Prompt user for book details (title and author)
-    const title = /* TODO: Get user input for title */;
-    const author = /* TODO: Get user input for author */;
-    // TODO: return object containing title and author
+
+    const bookTitle : string = String(prompt("Enter book title"));
+    const bookAuthor : string = String(prompt("Enter book author"));
+
+    const book : Book = {
+        title: bookTitle,
+        author: bookAuthor,
+        type: "book",
+    }
+
+    return book
 }
 
 // Create instances of 'Product'

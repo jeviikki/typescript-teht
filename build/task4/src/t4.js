@@ -1,18 +1,24 @@
-// Define the 'Product' type alias that can represent either 'ElectronicDevice' or 'Book'
-// osihgierdklgjgjoi
+"use strict";
 // Implement instances of the 'Product' type
 function createElectronicDevice() {
-    // TODO: Prompt user for electronic device details (brand and model)
-    const brand = String(prompt("Enter device brand"));
-    const model = String(prompt("Enter device brand"));
-    return;
-    // TODO: return object containing brand and model
+    const deviceBrand = String(prompt("Enter device brand"));
+    const deviceModel = String(prompt("Enter device model"));
+    const device = {
+        brand: deviceBrand,
+        model: deviceModel,
+        type: "electronic",
+    };
+    return device;
 }
 function createBook() {
-    // TODO: Prompt user for book details (title and author)
-    const title =  /* TODO: Get user input for title */;
-    const author =  /* TODO: Get user input for author */;
-    // TODO: return object containing title and author
+    const bookTitle = String(prompt("Enter book title"));
+    const bookAuthor = String(prompt("Enter book author"));
+    const book = {
+        title: bookTitle,
+        author: bookAuthor,
+        type: "book",
+    };
+    return book;
 }
 // Create instances of 'Product'
 const electronicProduct = createElectronicDevice();
@@ -34,4 +40,3 @@ displayProductDetails(electronicProduct);
 console.log();
 console.log('Book Details:');
 displayProductDetails(bookProduct);
-export {};
