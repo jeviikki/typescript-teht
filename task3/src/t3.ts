@@ -5,8 +5,7 @@ type Book = {
     author: string,
     publicationYear: number,
 }
-
-function promptForBook() {
+function promptForBook(): Book {
     const bookTitle : string = String(prompt("Enter the book's title"));
     const bookAuthor : string = String(prompt("Enter the book's author"));
     const bookPublicationYear : number = Number(prompt("Enter the book's publication year"));

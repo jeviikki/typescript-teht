@@ -3,7 +3,6 @@ type Item = {
     price: number;
     quantity: number;
 }
-
 // Create an empty array named 'cart' to store the items
 const cart: Item[] = [];
 
