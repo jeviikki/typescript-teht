@@ -1,33 +1,29 @@
-type Item = {
-    name: string;
-    price: number;
-    quantity: number;
-}
-// Create an empty array named 'cart' to store the items
-const cart: Item[] = [];
 
-// Use 'while' loop to keep prompting until an empty item name is entered
-while (true) {
-    const itemName = prompt("Enter item name:");
-    const itemPrice = prompt("Enter item price:");
-    const itemQuantity = prompt("Enter item quantity:");
-
-    // Break the loop if an empty item name is entered
-    if (!itemName || !itemPrice || !itemQuantity) {
-        break;
-    }
-
-    // Create an item object and add it to the 'cart' array
-    const newItem: Item = {
-        name: itemName,
-        price: Number(itemPrice),
-        quantity: Number(itemQuantity),
-    };
-    cart.push(newItem);
+interface User {
+    username: string,
+    email: string,
+    bio?: string,
 }
 
-// Calculate the total cost using the 'map' and 'reduce' functions
-const totalCost = cart.map(item => item.price * item.quantity).reduce((sum, cost) => sum + cost, 0);
+const user1: User = {
+    username: "NormalPerson",
+    email: "normaladdress@email.com",
+    bio: "I am just a normal guy."
+}
 
-// Display the total cost to the user
-console.log(`Total cost of the shopping cart: $${totalCost.toFixed(2)}`);
+const user2: User = {
+    username: "ineednointroduction",
+    email: "mysteriousperson@email.com",
+}
+
+// Function to display user information
+function displayUserInfo(user: User): void {
+    console.log(user.username);
+    console.log(user.email);
+    console.log(user.bio);
+}
+
+// Display user information
+displayUserInfo(user1);
+console.log(" ");
+displayUserInfo(user2);
