@@ -1,4 +1,3 @@
-"use strict";
 // Implement instances of the 'Product' type
 function createElectronicDevice() {
     const deviceBrand = String(prompt("Enter device brand"));
@@ -40,3 +39,4 @@ displayProductDetails(electronicProduct);
 console.log();
 console.log('Book Details:');
 displayProductDetails(bookProduct);
+export {};

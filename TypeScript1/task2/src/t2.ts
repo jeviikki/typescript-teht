@@ -1,4 +1,4 @@
-export default
+export {};
 // parameter num should be a number or null or undefined and the function shoud return a number or a string
 function squareRoot(num: number | undefined) {
     if (num == null || undefined) {

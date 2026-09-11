@@ -1,3 +1,4 @@
+export {};
 // define the type(s) for 'value'
 function lengthOrSquare(value: string | number){
     let response

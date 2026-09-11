@@ -1,4 +1,5 @@
-export default function squareRoot(num) {
+// parameter num should be a number or null or undefined and the function shoud return a number or a string
+function squareRoot(num) {
     if (num == null || undefined) {
         return "Input is undefined or null.";
     }
@@ -19,3 +20,4 @@ const numberInput = userInput ? parseFloat(userInput) : undefined;
 // Call the squareRoot function and display the result
 const result = squareRoot(numberInput);
 console.log(result);
+export {};

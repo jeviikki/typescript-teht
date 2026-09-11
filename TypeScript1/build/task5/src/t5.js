@@ -1,4 +1,3 @@
-"use strict";
 // define the type(s) for 'value'
 function lengthOrSquare(value) {
     let response;
@@ -20,3 +19,4 @@ const parsedValue = Number(userInput) || userInput;
 const result = lengthOrSquare(parsedValue);
 console.log(typeof result);
 console.log(result);
+export {};

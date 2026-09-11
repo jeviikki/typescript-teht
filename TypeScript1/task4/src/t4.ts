@@ -1,4 +1,4 @@
-//export {}; // hack to ignore Book from task 3
+export {}; // hack to ignore Book from task 3
 // TODO Define the 'ElectronicDevice' type (or interface)
 interface ElectronicDevice {
     brand: string,

@@ -1,4 +1,4 @@
-//export {}; // hack to ignore Book from task 4
+export {}; // hack to ignore Book from task 4
 
 type Book = {
     title: string,
