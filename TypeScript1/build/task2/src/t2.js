@@ -1,6 +1,4 @@
-"use strict";
-// parameter num should be a number or null or undefined and the function shoud return a number or a string
-function squareRoot(num) {
+export default function squareRoot(num) {
     if (num == null || undefined) {
         return "Input is undefined or null.";
     }
