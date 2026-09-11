@@ -14,7 +14,7 @@ function lengthOrSquare(value) {
 }
 // Prompt the user to enter a value as either a string or a number
 const userInput = prompt("Enter either a number or a string");
-const parsedValue = Number(userInput) || userInput;
+const parsedValue = Number(userInput) || String(userInput);
 // Call the lengthOrSquare function
 const result = lengthOrSquare(parsedValue);
 console.log(typeof result);
