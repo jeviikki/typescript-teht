@@ -9,7 +9,7 @@ const mixedArray: (string | number | boolean)[] = [true, 42, "hello", false];
 // Reversed Array of Strings: [ 'date', 'cherry', 'banana', 'apple' ]
 // Reversed Mixed Array: [ false, 'hello', 42, true ]
 
-function reverseArray<T>(array: T): T {
+function reverseArray<T>(array: T[]): T[] {
     array.reverse();
     return array;
 }
