@@ -1,28 +1,30 @@
-export {}; // hack to ignore Book from task 3
-// TODO Define the 'ElectronicDevice' type (or interface)
+//export {}; // hack to ignore Book from task 3
+
 interface ElectronicDevice {
     brand: string,
     model: string,
     type: string,
 }
-// Define the 'Book' type (or interface)
+
 interface Book {
     title: string,
     author: string,
     type: string,
 }
-// Define the 'Product' type alias that can represent either 'ElectronicDevice' or 'Book'
+
 type Product = {
     type: string,
-    device: ElectronicDevice,
-    book: Book,
+    brand?: any,
+    model?: any,
+    title?: any,
+    author?: any,
 }
 
 // Implement instances of the 'Product' type
 function createElectronicDevice(): ElectronicDevice {
 
-    const deviceBrand : string = String(prompt("Enter device brand"));
-    const deviceModel : string = String(prompt("Enter device model"));
+    const deviceBrand = String(prompt("Enter device brand"));
+    const deviceModel = String(prompt("Enter device model"));
 
     const device: ElectronicDevice = {
         brand: deviceBrand,
@@ -35,8 +37,8 @@ function createElectronicDevice(): ElectronicDevice {
 
 function createBook(): Book {
 
-    const bookTitle : string = String(prompt("Enter book title"));
-    const bookAuthor : string = String(prompt("Enter book author"));
+    const bookTitle = String(prompt("Enter book title"));
+    const bookAuthor = String(prompt("Enter book author"));
 
     const book : Book = {
         title: bookTitle,

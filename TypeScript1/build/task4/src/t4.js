@@ -1,3 +1,5 @@
+"use strict";
+//export {}; // hack to ignore Book from task 3
 // Implement instances of the 'Product' type
 function createElectronicDevice() {
     const deviceBrand = String(prompt("Enter device brand"));
@@ -39,4 +41,3 @@ displayProductDetails(electronicProduct);
 console.log();
 console.log('Book Details:');
 displayProductDetails(bookProduct);
-export {};
