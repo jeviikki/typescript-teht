@@ -1,7 +1,6 @@
-// TODO: Define the interface ExamResult with name, subject scores tuple, and total score
 interface ExamResult {
   name: string,
-  scores: [string, number],
+  scores: [[string, number],[string, number],[string, number]],
   totalScore: number,
 }
 const examResult: ExamResult = {
